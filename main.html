@@ -1,16 +1,60 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <title>Styled Page</title>
+    <style>
+        :root {
+            background-color: rgb(135, 206, 235);
+        }
+
+        p:first-child {
+            background-color: black;
+            color: white;
+        }
+
+        p:nth-child(2) {
+            color: inherit;
+        }
+
+        p:last-child {
+            color: red;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            width: 50%;
+            padding: 10px;
+            background-color: gray;
+        }
+
+        li:nth-child(odd) {
+            background-color: white;
+        }
+
+        li:first-child, li:last-child {
+            font-size: 22px;
+        }
+
+        li:nth-last-child(3) {
+            background-color: pink;
+        }
+    </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <p>This is the first paragraph.</p>
+    <p>This is the second paragraph.</p>
+    <p>This is the third paragraph.</p>
 
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ul>
 </body>
-
 </html>
